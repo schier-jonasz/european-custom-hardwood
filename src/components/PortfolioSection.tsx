@@ -7,12 +7,12 @@ import portfolioInterior from "@/assets/portfolio-interior.jpg";
 import heroStairs from "@/assets/hero-stairs.jpg";
 
 const projects = [
-  { src: portfolioFlooring, alt: "Herringbone walnut hardwood flooring", label: "Custom Flooring", span: "col-span-1 row-span-1" },
-  { src: portfolioStaircase, alt: "Curved hardwood staircase", label: "Staircase Design", span: "col-span-1 row-span-2" },
-  { src: portfolioRailing, alt: "Custom wood and glass railing", label: "Railings", span: "col-span-1 row-span-1" },
-  { src: portfolioInterior, alt: "Custom walnut wall paneling", label: "Interior Woodwork", span: "col-span-1 row-span-1" },
-  { src: portfolioRefinish, alt: "Before and after floor refinishing", label: "Refinishing", span: "col-span-1 row-span-1" },
-  { src: heroStairs, alt: "European oak curved staircase", label: "Bespoke Stairs", span: "col-span-1 row-span-1" },
+  { src: portfolioFlooring, alt: "Herringbone walnut hardwood flooring", label: "Custom Flooring" },
+  { src: portfolioStaircase, alt: "Curved hardwood staircase", label: "Staircase Design" },
+  { src: portfolioRailing, alt: "Custom wood and glass railing", label: "Railings" },
+  { src: portfolioInterior, alt: "Custom walnut wall paneling", label: "Interior Woodwork" },
+  { src: portfolioRefinish, alt: "Before and after floor refinishing", label: "Refinishing" },
+  { src: heroStairs, alt: "European oak curved staircase", label: "Bespoke Stairs" },
 ];
 
 const PortfolioSection = () => {
@@ -42,7 +42,7 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`group relative overflow-hidden cursor-pointer ${project.span}`}
+              className="group relative overflow-hidden cursor-pointer"
             >
               <img
                 src={project.src}
@@ -57,6 +57,50 @@ const PortfolioSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-20 max-w-3xl mx-auto text-center"
+        >
+          <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground mb-4">
+            Social Media
+          </p>
+          <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-4">
+            See how we work behind the scenes
+          </h3>
+          <p className="text-base md:text-lg text-muted-foreground mb-8">
+            We love sharing what we create and how we do it — sometimes in a light-hearted,
+            playful way and sometimes in a more technical, professional tone. If you are
+            curious to see how we constantly try to do our craft as well as possible, have a
+            look at our short reels and videos on YouTube, TikTok or Facebook.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href="#"
+              aria-label="Visit our YouTube channel"
+              className="px-5 py-2.5 rounded-full border border-border text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"
+            >
+              YouTube
+            </a>
+            <a
+              href="#"
+              aria-label="Visit our TikTok profile"
+              className="px-5 py-2.5 rounded-full border border-border text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"
+            >
+              TikTok
+            </a>
+            <a
+              href="#"
+              aria-label="Visit our Facebook page"
+              className="px-5 py-2.5 rounded-full border border-border text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"
+            >
+              Facebook
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
