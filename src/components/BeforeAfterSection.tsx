@@ -68,7 +68,7 @@ const ComparisonSlider = ({ before, after, caption, description }: ComparisonSli
 
         {/* Before image (clipped) */}
         <div className="absolute inset-0 overflow-hidden" style={{ width: `${sliderPos}%` }}>
-          <img src={before} alt={`Before: ${caption}`} className="absolute inset-0 w-full h-full object-cover" style={{ width: `${containerRef.current ? containerRef.current.offsetWidth : 100}px`, maxWidth: 'none' }} draggable={false} />
+          <img src={before} alt={`Before: ${caption}`} className="block h-full object-cover" style={{ width: `${containerRef.current?.offsetWidth ?? 9999}px`, maxWidth: 'none' }} draggable={false} />
         </div>
 
         {/* Slider line */}
