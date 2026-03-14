@@ -7,8 +7,6 @@ import beforeStairs from "@/assets/before-stairs.jpg";
 import afterStairs from "@/assets/after-stairs.jpg";
 import beforeRailing from "@/assets/before-railing.jpg";
 import afterRailing from "@/assets/after-railing.jpg";
-import beforePaneling from "@/assets/before-paneling.jpg";
-import afterPaneling from "@/assets/after-paneling.jpg";
 import beforeHerringbone from "@/assets/before-herringbone.jpg";
 import afterHerringbone from "@/assets/after-herringbone.jpg";
 
@@ -16,7 +14,6 @@ const projects = [
   { before: beforeFloor, after: afterFloor, caption: "Hardwood Floor Refinishing", description: "Oak plank flooring restored to its original warmth and luster." },
   { before: beforeStairs, after: afterStairs, caption: "Custom Staircase Installation", description: "Complete staircase rebuild with European hardwood treads and iron balusters." },
   { before: beforeRailing, after: afterRailing, caption: "Railing & Balustrade Upgrade", description: "Worn wooden railing replaced with a modern wood-and-glass design." },
-  { before: beforePaneling, after: afterPaneling, caption: "Interior Wall Paneling", description: "Raw timber walls transformed into rich walnut paneling with crown molding." },
   { before: beforeHerringbone, after: afterHerringbone, caption: "Herringbone Parquet Restoration", description: "Damaged parquet floor sanded and refinished to a pristine glossy finish." },
 ];
 
